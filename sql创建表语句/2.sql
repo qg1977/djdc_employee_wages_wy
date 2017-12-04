@@ -1,0 +1,21 @@
+USE [qds16172939_db]
+GO
+
+/****** Object:  Table [dbo].[allmax]    Script Date: 2017/11/25 16:25:04 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[allmax](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[months] [nchar](6) NULL,
+ CONSTRAINT [PK_allmax] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+

@@ -1,0 +1,75 @@
+
+<!-- saved from url=(0560)http://family-101-m.view.sitestar.cn/mplugin/mbaidumap/view/map.php?addrdefault=%E4%B8%8A%E6%B5%B7&gkey=&addr=%E4%B8%8A%E6%B5%B7%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E4%B8%96%E7%BA%AA%E5%A4%A7%E9%81%931%E5%8F%B7&width=320&height=170&showbj=1&showmap=1&showruler=1&showmumap=1&showmapwidth=&showmapheight=&key=&win=1&ani=1&mark_near=0&mark_go=0&mark_come=0&mark_res=0&mark_pht=0&win_w=&win_h=&mark_ifo=%E5%9C%B0%E9%93%812%E5%8F%B7%E7%BA%BF%E5%88%B0%E9%99%86%E5%AE%B6%E5%98%B4%E7%AB%99&def_ifo=%E4%B8%8A%E6%B5%B7%E4%B8%9C%E6%96%B9%E6%98%8E%E7%8F%A0&language=zh_CN -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<style type="text/css">
+body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;} @media (max-device-width: 780px){#golist{display: block!important;}}#golist {display: none;}
+</style>
+<script type="text/javascript" src="./api"></script><script type="text/javascript" src="./getscript"></script><script type="text/javascript" src="./getscript(1)"></script>
+<title>Baidu Map</title>
+
+</head>
+<body> 
+<div id="allmap" style="overflow: hidden; position: relative; z-index: 0; background-color: rgb(245, 243, 240); color: rgb(0, 0, 0); text-align: left;"><div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px;"><div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; user-select: none; width: 320px; height: 170px;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"></div><div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div></div><div style="position: absolute; top: 0px; left: 0px; z-index: 1;"><div style="position: absolute; z-index: -100; left: 160px; top: 85px; display: none;"></div></div><div style="position: absolute; top: 0px; left: 0px; z-index: 2;"></div><div style="position: absolute; top: 0px; left: 0px; z-index: 3;"></div></div></div>
+
+
+<script type="text/javascript">
+
+	var jd=116.331398;
+	var wd=39.897445;
+	
+	//116.307852 //40.057031
+		
+// 百度地图API功能
+var map = new BMap.Map("allmap");
+var point = new BMap.Point(jd,wd);
+
+function showselectmap(point){
+	map.centerAndZoom(point, 10);
+                        map.addControl(new BMap.ZoomControl());
+            		map.addControl(new BMap.ScaleControl());  
+		
+		var marker1 = new BMap.Marker(point);  // 创建标注
+	map.addOverlay(marker1);  
+	 
+	var opts = {
+	  width : 200,     // 信息窗口宽度
+	  height: 65,     // 信息窗口高度
+	  title : "上海东方明珠" // 信息窗口标题
+	}
+	
+	var infoWindow = new BMap.InfoWindow("地铁2号线到陆家嘴站", opts);  // 创建信息窗口对象 
+		marker1.openInfoWindow(infoWindow);
+		marker1.addEventListener("click", function(){		
+		//this.openInfoWindow(infoWindow);
+		var start = {
+			 name:""
+		}
+		var end = {
+			name:"上海浦东新区世纪大道1号"
+		}
+		var opts = {
+			mode:BMAP_MODE_DRIVING,
+			region:""
+		}
+		var ss = new BMap.RouteSearch();
+		ss.routeCall(start,end,opts);
+		
+	});
+	
+		
+	
+}
+map.centerAndZoom(point,10);
+         //添加地图缩放控件
+// 创建地址解析器实例
+var myGeo = new BMap.Geocoder();
+// 将地址解析结果显示在地图上,并调整地图视野
+myGeo.getPoint("\u4e0a\u6d77\u6d66\u4e1c\u65b0\u533a\u4e16\u7eaa\u5927\u90531\u53f7", function(point){
+  if (point) {
+	showselectmap(point);
+  }
+}, "北京市");
+</script>
+</body></html>

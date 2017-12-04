@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.wp-mslider_content{position:relative;direction: ltr;}
+ul.mslider_wrapper {position:relative;top:0;overflow:hidden;}
+ul.mslider_wrapper li {float:left;background:url(/template/default/images/loading.gif) no-repeat center;height:auto;width:100%;overflow:hidden;}
+ul.mslider_wrapper li img {visibility:hidden;}
+ul.mslider_wrapper li a {display:inline-block;height:100%;width:100%;}
+.mslider_bar {position:absolute;height:22px;text-align:right;bottom:12px;right:12px;z-index:11;}
+.mslider_bar a {width:22px;height:22px;display:inline-block;overflow:hidden;background:url(../view/images/bullets.png) no-repeat;margin:0px 3px;}
+.mslider_bar a.local {background-position:0px -22px;}

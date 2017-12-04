@@ -1,0 +1,94 @@
+/* CSS Document */
+
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul { 
+margin: 0; 
+padding: 0 
+} 
+Ul,Ol { List-style-type:none; List-style-image:none;}
+img { 
+border: 0 
+} 
+img { 
+height: auto; 
+width: auto\9; 
+width:100%; 
+} 
+a { text-decoration:none;color: #404040}
+a:HOVER{ color:#00637d; text-decoration: underline;}
+.blue{
+	color:#009140;
+}
+.red{
+	color:#FF0000;
+}
+body{font-size:12px; background:#fff; color:#333;font-family:"Microsoft yahei", "Arial", "sans-serif";
+-webkit-text-size-adjust: none ;
+; padding:0px; margin:0px;Text-transform:capitalize;
+min-width: 320px;
+}
+/*Bady { font-size:12px;
+min-width: 320px;
+-webkit-text-size-adjust: none ;
+"Microsoft Yahei", "微软雅黑",Arial; padding:0px; margin:0px;Text-transform:capitalize}
+*/  
+.main{padding-bottom:70px;}
+
+.header{ LINE-HEIGHT: 36px; BACKGROUND:#f3f3f3  ;HEIGHT:36px; border-bottom:1px solid #dedede;}
+.header H2 {PADDING-LEFT: 12px; FLOAT: left; COLOR: #00637d; FONT-SIZE: 14px}
+
+
+/*菜单*/
+#nav{
+	min-width:320px; width:100%;
+	margin: 0; 
+padding: 0 ;
+font-size: 14px; line-height:27px; 
+margin-top:10px;
+}
+
+#nav UL {padding-left: 0%; background: height:32px; }
+#nav LI {text-align: center; line-height: 29px; width:25%; float: left; color: #fff; ; background:#009140 url("../images/wap/menu3.jpg") no-repeat right top; height:29px;border-bottom:#FFF 2px; }
+#nav A {color: #fff; text-decoration: none; display:block; margin-right:1px; font-size:16px; font-weight:bold;background:url("../images/wap/menu2.jpg") repeat-x bottom;}
+#nav A:visited {color: #fff}
+#nav a:hover{}
+/*菜单*/
+
+
+.con{ border-top:1px solid #dedede;}
+.contact{ line-height:24px; padding:10px; background:#fff;}
+
+.content .title { LINE-HEIGHT: 36px; BACKGROUND:#f3f3f3  ;HEIGHT:36px; border-bottom:1px solid #dedede;}
+
+.content .title H2 {PADDING-LEFT: 12px; FLOAT: left; COLOR: #00637d; FONT-SIZE: 14px}
+.content .title H2 A {COLOR: #007be1;}
+.content .title H5 {PADDING-LEFT: 12px; FLOAT: left; COLOR: #a2001e; FONT-SIZE: 14px}
+.content .title H5 A {COLOR: #a2001e}
+.content .title H2 s{ float:left; padding:6px 6px 0 0;}
+
+
+
+.expertt{ width:98%; height:auto; overflow:hidden; }
+.expertt LI {border-bottom: #cdcdcd 1px solid;  height:auto; padding:6px 6px 0px 6px;  overflow: hidden;}
+.expertt LI {padding-bottom: 6px; }
+.expertt .expert-img {margin: 6px 6px 0px 0px; float: left; text-align:center;}
+.expertt img{ width:120px; height:88px;border:1px solid #009140;padding:1px;}
+
+.expert li P { color:#333333; line-height: 24px; float:left; }
+.expert li P a{ color:#f60; line-height: 24px; text-decoration:underline;}
+
+
+/* width:100%; background:#f7f7f7; padding:10px; line-height:20px;text-align:center; font-size:14px*/
+
+#footer { float:left; padding-bottom:10px; padding-top:5px; border-top:1px solid #dedede; margin-top:15px; background:url("../images/wap/bottom.jpg") repeat-x; text-align:center;overflow:hidden;height:auto; box-sizing:border-box; width:100%}
+#footer p {text-align: center; padding:6px 0px 6px 0px; line-height: 22px; color: #fff; font-size: 14px;}
+
+.divwx{width:100%; text-align:center;}
+.divwx img{ height:300px; width:300px;}
+
+.footerx{width:100%; margin-top:20px; position:fixed; left:0; bottom:0}
+.footerx .tel{width:25%; float:left; padding:0 10px;box-sizing:border-box;}
+.footerx .tel a{ background-image:url("../images/wap/icon_02.png");}
+.footerx .f8{width:25%; float:right; padding:0 10px;box-sizing:border-box;}
+.footerx .f8 a{background-image:url("../images/wap/icon_05.png");}
+.footerx a {display:block; text-align:center;font-size:14px;color:#fff; background-color:#0072ba; border-radius:10px; background-position:center 10px; background-repeat:no-repeat; padding:40px 0 10px;}
+

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.wp-title_content {font:16px "Microsoft YaHei","黑体",Helvetica,Arial,Tahoma,sans-serif;color:#5a5a5a;margin:0;
+		overflow:hidden;}
+.wp-title_content h1 {margin:0.67em 0;}
+.wp-title_content h2 {margin:0.83em 0;}
+.wp-title_content h3 {margin:1em 0;}
+.wp-title_content h4 {margin:1.33em 0;}
+.wp-title_content h5 {margin:1.67em 0;}
+.wp-title_content h6 {margin:2.33em 0;}
+.wp-title_content p {line-height:1.5;}
+.wp-title_content a[name]:before {content:"";}
+/* .wp-title_content p {line-height:16px;} */
+.wp-title_content .edui-default .edui-editor {border:none;}
+.wp-title_content .edui-default .edui-editor-toolbarbox,
+.wp-title_content .edui-default .edui-editor-bottomContainer {display:none;}
+.customer-editor-toolbarbox .edui-default .edui-editor-toolbarboxouter {background:#C2CEEA url(../../../template/default/images/sprites.png) repeat-x 0 -1950px;-webkit-border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;border-radius:4px 4px 0 0;}
+.customer-editor-toolbarbox .edui-editor-bottomContainer {background-color:#C2CEEA;-webkit-border-radius:0 0 4px 4px;-moz-border-radius:0 0 4px 4px;border-radius:0 0 4px 4px;*zoom:1;}
+.customer-editor-toolbarbox .edui-default .edui-editor-wordcount {color:#808080;}
+.customer-editor-toolbarbox .edui-default .edui-toolbar .edui-combox-body .edui-button-body {width:41px;}
